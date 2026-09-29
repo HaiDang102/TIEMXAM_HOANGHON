@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giới Thiệu - Hoàng Hôn Tattoo (7 Năm Kinh Nghiệm)</title>
+  <meta name="description" content="Tìm hiểu về hành trình 7 năm phát triển của Hoàng Hôn Tattoo. Triết lý nghệ thuật xăm hình tinh tế, quy trình vô trùng nghiêm ngặt và cam kết chất lượng.">
+  <meta property="og:title" content="Giới Thiệu - Hoàng Hôn Tattoo">
+  <meta property="og:description" content="Hành trình 7 năm đồng hành cùng nghệ thuật xăm hình chuyên nghiệp.">
+  <meta property="og:image" content="assets/images/artist.jpg">
+  <link rel="icon" href="assets/images/artist.jpg" type="image/jpeg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Background Orbs -->
+  <div class="bg" aria-hidden="true">
+    <i></i><i></i><i></i><i></i>
+  </div>
+
+  <div class="menu-orb-container" aria-hidden="true">
+    <div class="menu-gold-orb orb-1"></div>
+    <div class="menu-gold-orb orb-2"></div>
+    <div class="menu-gold-orb orb-3"></div>
+  </div>
+
+  <svg style="display:none;" aria-hidden="true">
+    <filter id="glass-refraction">
+      <feTurbulence type="fractalNoise" baseFrequency="0.02 0.05" numOctaves="2" result="noise" />
+      <feDisplacementMap id="glassDisplacement" in="SourceGraphic" in2="noise" scale="4" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+  </svg>
+
+  <!-- Liquid Glass Header Navigation Bar -->
+  <nav id="navbar" aria-label="Thanh điều hướng chính">
+    <div class="nav-brand">
+      <a href="index.html" class="logo-link">HOÀNG HÔN TATTOO</a>
+    </div>
+
+    <div class="nav-menu-wrapper">
+      <div id="navIndicator" class="nav-indicator" aria-hidden="true"></div>
+
+      <div class="nav-menu" role="menubar">
+        <a href="index.html" class="nav-link" role="menuitem">Trang chủ</a>
+        <a href="gioi-thieu.html" class="nav-link active" aria-current="page" role="menuitem">Giới thiệu</a>
+        <a href="dich-vu.html" class="nav-link" role="menuitem">Dịch vụ</a>
+        <a href="tac-pham.html" class="nav-link" role="menuitem">Tác phẩm</a>
+        <a href="bang-gia.html" class="nav-link" role="menuitem">Bảng giá</a>
+        <a href="dat-lich.html" class="nav-link" role="menuitem">Đặt lịch</a>
+        <a href="lien-he.html" class="nav-link" role="menuitem">Liên hệ</a>
+      </div>
+    </div>
+
+    <button id="navToggle" class="nav-toggle" aria-label="Mở menu trên điện thoại" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Section Title -->
+  <section style="padding-top: 70px; padding-bottom: 20px;">
+    <div class="section-header center">
+      <h2>Về Hoàng Hôn Tattoo</h2>
+      <p class="sub">7 Năm Kinh Nghiệm Đồng Hành Cùng Nghệ Thuật Xăm Hình Chuyên Nghiệp</p>
+    </div>
+  </section>
+
+  <!-- Main Story Section -->
+  <section id="about" class="reveal-on-scroll" style="padding-top: 10px;">
+    <div class="about-full-banner">
+      <img src="assets/images/banner.jpg" alt="Hoàng Hôn Ink Tattoo - An Phát" onerror="this.onerror=null; this.src='assets/images/artist.svg';">
+    </div>
+
+    <div class="about-grid" style="margin-top: 36px;">
+      <div class="about-img-box">
+        <div class="about-img-frame">
+          <img src="assets/images/artist.jpg" alt="Hoàng Hôn Tattoo Master Artist" onerror="this.onerror=null; this.src='assets/images/artist.svg';">
+          <div class="about-img-badge">✨ MASTER TATTOO ARTIST · HOÀNG HÔN</div>
+        </div>
+      </div>
+
+      <div class="about-info-box">
+        <h2>Hành Trình 7 Năm Nghề</h2>
+        <p class="about-lead">
+          Hoàng Hôn Tattoo ra đời từ niềm đam mê sâu sắc với nghệ thuật xăm và một tư duy đơn giản: <b>mỗi hình xăm không chỉ là một họa tiết trên da, mà là một câu chuyện, một dấu ấn riêng biệt của người mang nó.</b>
+        </p>
+        <p style="color: var(--tx); font-size: 15px; line-height: 1.8;">
+          Cái tên "Hoàng Hôn" gợi đến khoảnh khắc cuối ngày, khi ánh sáng dịu lại và mọi thứ trở nên sâu lắng hơn. Đó cũng là cảm giác chúng tôi muốn mang vào từng tác phẩm: tinh tế, có chiều sâu và đọng lại lâu dài.
+        </p>
+        <p style="color: var(--tx); font-size: 15px; line-height: 1.8;">
+          Với hơn <b><span class="owner-exp">7</span> năm kinh nghiệm trong nghề</b>, chúng tôi đã thực hiện hàng nghìn tác phẩm từ những mẫu mini tinh xảo đến các dự án khổ lớn kín tay, kín lưng công phu.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Quy trình 4 bước làm việc -->
+  <section class="reveal-on-scroll">
+    <div class="section-header center">
+      <h2>Quy Trình 4 Bước Chuyên Nghiệp</h2>
+      <p class="sub">Từng công đoạn được thực hiện tỉ mỉ để mang lại tác phẩm hoàn hảo nhất.</p>
+    </div>
+
+    <div class="price-grid" style="grid-template-columns: repeat(4, 1fr);">
+      <div class="price-card">
+        <div>
+          <span class="price-tag">Bước 01</span>
+          <h3>Tư Vấn & Lắng Nghe</h3>
+          <p>Trao đổi kỹ ý tưởng, vị trí và kích thước phù hợp với phong cách và cơ thể của bạn.</p>
+        </div>
+      </div>
+
+      <div class="price-card">
+        <div>
+          <span class="price-tag">Bước 02</span>
+          <h3>Thiết Kế Phác Thảo</h3>
+          <p>Phác thảo riêng cá nhân hóa 100%. Chỉ thực hiện xăm khi bạn hoàn toàn hài lòng với bản vẽ.</p>
+        </div>
+      </div>
+
+      <div class="price-card highlight">
+        <div>
+          <span class="price-tag">Bước 03</span>
+          <h3>Thực Hiện Vô Trùng</h3>
+          <p>Sử dụng kim xăm 1 lần, vệ sinh vô trùng y tế nghiêm ngặt, thực hiện êm ái và chính xác.</p>
+        </div>
+      </div>
+
+      <div class="price-card">
+        <div>
+          <span class="price-tag">Bước 04</span>
+          <h3>Hướng Dẫn Chăm Sóc</h3>
+          <p>Cung cấp sản phẩm dưỡng và hướng dẫn chăm sóc chi tiết sau xăm để vết xăm lành đẹp nhất.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Cam kết an toàn & vệ sinh -->
+  <section class="reveal-on-scroll">
+    <div style="padding: 40px; border-radius: 28px; background: rgba(255, 248, 235, 0.04); border: 1px solid rgba(255, 230, 180, 0.2); backdrop-filter: blur(20px);">
+      <div class="section-header">
+        <h2>Cam Kết An Toàn & Vệ Sinh Y Tế</h2>
+        <p class="sub">Sức khỏe và sự an tâm của khách hàng là ưu tiên hàng đầu tại Hoàng Hôn Tattoo.</p>
+      </div>
+
+      <div class="about-features-grid">
+        <div class="feat-card">
+          <span class="feat-num">✓</span>
+          <div>
+            <b>Kim xăm & Dụng cụ dùng 1 lần</b>
+            <p>100% kim xăm, khay mực, bao tay được tháo niêm phong trước mặt khách và bỏ đi sau 1 lần sử dụng.</p>
+          </div>
+        </div>
+
+        <div class="feat-card">
+          <span class="feat-num">✓</span>
+          <div>
+            <b>Mực xăm nhập khẩu chính hãng</b>
+            <p>Sử dụng thương hiệu mực đạt chuẩn chứng nhận an toàn quốc tế, độ bền màu cao và lành tính cho da.</p>
+          </div>
+        </div>
+
+        <div class="feat-card">
+          <span class="feat-num">✓</span>
+          <div>
+            <b>Máy móc vô trùng y tế</b>
+            <p>Toàn bộ thiết bị được khử trùng bằng dung dịch chuyên dụng y tế trước và sau mỗi ca thực hiện.</p>
+          </div>
+        </div>
+
+        <div class="feat-card">
+          <span class="feat-num">✓</span>
+          <div>
+            <b>Bảo mật thông tin 100%</b>
+            <p>Mọi thông tin cá nhân và hình ảnh khách hàng được tôn trọng và bảo mật tuyệt đối.</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 32px;">
+        <a href="dat-lich.html" class="btn">Đặt Lịch Hẹn Tư Vấn Ngay</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2026 <span class="owner-name">HOÀNG HÔN TATTOO</span>. All rights reserved. | Nghệ Thuật Xăm - Đẳng Cấp Khác Biệt
+  </footer>
+
+  <!-- Mobile Quick CTA -->
+  <div class="mobile-quick-cta">
+    <a href="tel:0868660061" class="quick-btn call" aria-label="Gọi điện ngay">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+      <span>Gọi ngay</span>
+    </a>
+    <a href="https://zalo.me/0868660061" target="_blank" rel="noopener" class="quick-btn zalo" aria-label="Nhắn Zalo ngay">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.82.49 3.53 1.35 5L2 22l5.1-1.31C8.54 21.52 10.22 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18c-1.55 0-3.03-.43-4.32-1.22l-.31-.19-3.2 0.82 0.84-3.11-.2-.33A7.95 7.95 0 0 1 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8-3.59 8-8 8z"/></svg>
+      <span>Zalo</span>
+    </a>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#14100c"/><stop offset="100%" stop-color="#080604"/></linearGradient>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#f3e2b8"/><stop offset="100%" stop-color="#c9973f"/></linearGradient>
+  </defs>
+  <rect width="500" height="500" rx="16" fill="url(#bg)"/>
+  <circle cx="250" cy="250" r="190" fill="none" stroke="url(#g)" stroke-width="1" opacity="0.2"/>
+  <!-- Calligraphy Lettering -->
+  <g fill="none" stroke="url(#g)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 90 260 C 130 140, 160 310, 190 230 C 210 180, 230 280, 260 220 C 280 180, 310 270, 350 200 C 370 170, 410 240, 420 220" stroke-width="5"/>
+    <path d="M 80 300 Q 250 340 430 280" stroke-width="2.5" stroke-dasharray="120 10"/>
+    <circle cx="100" cy="230" r="4" fill="url(#g)"/>
+    <circle cx="410" cy="205" r="3" fill="url(#g)"/>
+  </g>
+  <text x="250" y="380" fill="url(#g)" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="32" text-anchor="middle">Hoang Hon Tattoo</text>
+  <text x="250" y="455" fill="#e6c887" font-family="'Inter', sans-serif" font-size="14" font-weight="600" letter-spacing="2" text-anchor="middle">LETTERING STYLE</text>
+</svg>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đặt Lịch Hẹn - Hoàng Hôn Tattoo (Tư Vấn & Xăm Nghệ Thuật)</title>
+  <meta name="description" content="Điền thông tin đặt lịch tư vấn xăm hình nghệ thuật, xỏ khuyên an toàn hoặc vô bi riêng tư tại Hoàng Hôn Tattoo. Tiệm liên hệ xác nhận trong 24h.">
+  <meta property="og:title" content="Đặt Lịch Hẹn Tư Vấn - Hoàng Hôn Tattoo">
+  <meta property="og:description" content="Đăng ký lịch hẹn trực tuyến nhanh chóng, tiện lợi.">
+  <meta property="og:image" content="assets/images/banner.jpg">
+  <link rel="icon" href="assets/images/artist.jpg" type="image/jpeg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Background Orbs -->
+  <div class="bg" aria-hidden="true">
+    <i></i><i></i><i></i><i></i>
+  </div>
+
+  <div class="menu-orb-container" aria-hidden="true">
+    <div class="menu-gold-orb orb-1"></div>
+    <div class="menu-gold-orb orb-2"></div>
+    <div class="menu-gold-orb orb-3"></div>
+  </div>
+
+  <svg style="display:none;" aria-hidden="true">
+    <filter id="glass-refraction">
+      <feTurbulence type="fractalNoise" baseFrequency="0.02 0.05" numOctaves="2" result="noise" />
+      <feDisplacementMap id="glassDisplacement" in="SourceGraphic" in2="noise" scale="4" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+  </svg>
+
+  <!-- Liquid Glass Header Navigation Bar -->
+  <nav id="navbar" aria-label="Thanh điều hướng chính">
+    <div class="nav-brand">
+      <a href="index.html" class="logo-link">HOÀNG HÔN TATTOO</a>
+    </div>
+
+    <div class="nav-menu-wrapper">
+      <div id="navIndicator" class="nav-indicator" aria-hidden="true"></div>
+
+      <div class="nav-menu" role="menubar">
+        <a href="index.html" class="nav-link" role="menuitem">Trang chủ</a>
+        <a href="gioi-thieu.html" class="nav-link" role="menuitem">Giới thiệu</a>
+        <a href="dich-vu.html" class="nav-link" role="menuitem">Dịch vụ</a>
+        <a href="tac-pham.html" class="nav-link" role="menuitem">Tác phẩm</a>
+        <a href="bang-gia.html" class="nav-link" role="menuitem">Bảng giá</a>
+        <a href="dat-lich.html" class="nav-link active" aria-current="page" role="menuitem">Đặt lịch</a>
+        <a href="lien-he.html" class="nav-link" role="menuitem">Liên hệ</a>
+      </div>
+    </div>
+
+    <button id="navToggle" class="nav-toggle" aria-label="Mở menu trên điện thoại" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Section Header -->
+  <section style="padding-top: 70px; padding-bottom: 20px;">
+    <div class="section-header center">
+      <h2>Đặt Lịch Hẹn Tư Vấn</h2>
+      <p class="sub">Điền thông tin bên dưới, tiệm sẽ chủ động liên hệ xác nhận lịch làm việc trong vòng 24 giờ.</p>
+    </div>
+  </section>
+
+  <!-- Section Booking Form Container -->
+  <section id="book" style="padding-top: 10px;">
+    <form id="f" class="sans booking-form-box">
+      <!-- Honeypot Chống Bot Spam (Ẩn) -->
+      <input type="text" name="website" style="display:none !important;" tabindex="-1" autocomplete="off">
+
+      <label>Họ và tên *
+        <input name="name" required placeholder="VD: Nguyễn Văn A">
+      </label>
+
+      <label>Số điện thoại / Zalo *
+        <input name="phone" type="tel" required placeholder="0868xxxxxx">
+      </label>
+
+      <label>Email (Không bắt buộc)
+        <input name="email" type="email" placeholder="example@email.com">
+      </label>
+
+      <label>Dịch vụ mong muốn *
+        <select name="type">
+          <option value="Tư vấn">Tư vấn chung</option>
+          <option value="Xăm hình" selected>Xăm hình nghệ thuật</option>
+          <option value="Xỏ khuyên">Xỏ khuyên an toàn</option>
+          <option value="Vô bi">Vô bi & Tư vấn riêng tư (18+)</option>
+          <option value="Cover-up / chỉnh sửa">Cover-up / Chỉnh sửa hình xăm cũ</option>
+        </select>
+      </label>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+        <label>Ngày mong muốn *
+          <input id="dateInput" name="date" type="date" required>
+        </label>
+
+        <label>Khung giờ dự kiến
+          <select name="time">
+            <option>Sáng (10:00 - 13:00)</option>
+            <option>Chiều (13:00 - 17:00)</option>
+            <option>Tối (17:00 - 20:00)</option>
+          </select>
+        </label>
+      </div>
+
+      <!-- Ô Phong cách (Ẩn khi chọn Xỏ khuyên / Vô bi) -->
+      <label id="lblStyle">Phong cách xăm quan tâm
+        <select name="style">
+          <option value="">-- Chưa xác định (Tư vấn sau) --</option>
+          <option value="Blackwork">Blackwork (Mực đen)</option>
+          <option value="Lettering">Lettering (Xăm chữ)</option>
+          <option value="Japanese">Japanese (Nhật cổ)</option>
+          <option value="Minimalist">Minimalist (Tối giản / Fine-line)</option>
+          <option value="Realism">Realism (Tả thực)</option>
+          <option value="Dotwork">Dotwork (Xăm chấm)</option>
+        </select>
+      </label>
+
+      <!-- Ô Vị trí (Thay đổi nhãn linh hoạt) -->
+      <label id="lblPlace"><span id="txtPlaceLabel">Vị trí xăm *</span>
+        <input name="place" placeholder="VD: Cẳng tay, bắp chân, vành tai, cổ tay...">
+      </label>
+
+      <!-- Khung xác nhận 18+ (Dành cho Xỏ khuyên & Vô bi) -->
+      <div id="ageCheckContainer" class="form-age-check" style="display: none;">
+        <input type="checkbox" id="chkAge18" name="chkAge18">
+        <label for="chkAge18" style="margin:0; font-size:13.5px; color:#f5e2b5; font-weight:600;">
+          Tôi xác nhận đã đủ 18 tuổi trở lên khi đăng ký dịch vụ này. *
+        </label>
+      </div>
+
+      <label>Mô tả ý tưởng hoặc ghi chú thêm
+        <textarea name="idea" rows="4" placeholder="Mô tả ngắn gọn ý tưởng, ý nghĩa hoặc mong muốn của bạn..."></textarea>
+      </label>
+
+      <label>Lưu ý sức khỏe (nếu có)
+        <input name="health" placeholder="VD: Da nhạy cảm, dị ứng thuốc sát trùng... (nếu không có thì bỏ qua)">
+      </label>
+
+      <div class="privacy-notice">
+        🔒 Thông tin của bạn được cam kết bảo mật tuyệt đối.
+      </div>
+
+      <div style="margin-top: 24px;">
+        <button type="submit" class="btn" style="width: 100%; padding: 15px;">Gửi Yêu Cầu Đặt Lịch</button>
+      </div>
+    </form>
+
+    <!-- Khung thông báo kết quả gửi form -->
+    <div id="res" class="booking-result-box" style="margin-top: 24px;">
+      <h3 id="rt">Đang xử lý yêu cầu...</h3>
+      <p id="rp">Vui lòng chờ trong giây lát.</p>
+      <div style="margin-top: 16px; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+        <button id="bz" class="btn o" type="button">Gửi Tin Nhắn Qua Zalo</button>
+        <a href="tel:0868660061" class="btn btn-call">Gọi Trực Tiếp 086.866.0061</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2026 <span class="owner-name">HOÀNG HÔN TATTOO</span>. All rights reserved. | Nghệ Thuật Xăm - Đẳng Cấp Khác Biệt
+  </footer>
+
+  <!-- Mobile Quick CTA -->
+  <div class="mobile-quick-cta">
+    <a href="tel:0868660061" class="quick-btn call" aria-label="Gọi điện ngay">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+      <span>Gọi ngay</span>
+    </a>
+    <a href="https://zalo.me/0868660061" target="_blank" rel="noopener" class="quick-btn zalo" aria-label="Nhắn Zalo ngay">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.82.49 3.53 1.35 5L2 22l5.1-1.31C8.54 21.52 10.22 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18c-1.55 0-3.03-.43-4.32-1.22l-.31-.19-3.2 0.82 0.84-3.11-.2-.33A7.95 7.95 0 0 1 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8-3.59 8-8 8z"/></svg>
+      <span>Zalo</span>
+    </a>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#14100c"/><stop offset="100%" stop-color="#080604"/></linearGradient>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#f3e2b8"/><stop offset="100%" stop-color="#c9973f"/></linearGradient>
+  </defs>
+  <rect width="500" height="500" rx="16" fill="url(#bg)"/>
+  <g fill="none" stroke="url(#g)" stroke-linecap="round" stroke-linejoin="round" transform="translate(40,30)">
+    <!-- Coiling Dragon Body -->
+    <path d="M 120 380 Q 200 420 280 370 Q 380 300 320 210 Q 250 120 160 160 Q 90 200 130 290 Q 180 360 270 300 Q 320 250 300 180" stroke-width="5"/>
+    <path d="M 120 380 Q 200 420 280 370 Q 380 300 320 210 Q 250 120 160 160 Q 90 200 130 290 Q 180 360 270 300 Q 320 250 300 180" stroke-width="1.5" stroke-dasharray="6 6"/>
+    <!-- Dragon Head -->
+    <path d="M 300 180 Q 340 140 370 160 Q 380 180 340 200 Z" fill="url(#g)"/>
+    <!-- Horns and Whiskers -->
+    <path d="M 340 145 Q 380 110 400 120" stroke-width="2.5"/>
+    <path d="M 360 170 Q 410 170 430 190" stroke-width="2"/>
+    <!-- Fire Orbs -->
+    <circle cx="100" cy="120" r="14" fill="url(#g)" fill-opacity="0.3" stroke-width="1.5"/>
+  </g>
+  <text x="250" y="455" fill="#e6c887" font-family="'Inter', sans-serif" font-size="14" font-weight="600" letter-spacing="2" text-anchor="middle">JAPANESE DRAGON</text>
+</svg>
